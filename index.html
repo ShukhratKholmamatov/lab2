@@ -6,44 +6,28 @@
     <link rel="stylesheet" href="style.css">
     <title>Shukhrat</title>
 </head>
-<body>
+<body id="body">
     <nav>
-        <h1>Shukhrat</h1>
+        <h1 id="bigf">Shukhrat</h1>
         <ul>
             <a href="#home"><li>Home</li></a>
             <a href="#about"><li>About</li></a>
             <a href="#skills"><li>Skills</li></a>
             <a href="#portolio"><li>Portfolio</li></a>
         </ul>
-        <button><img src="/imgs/icons8-moon.gif" class="moon" alt="moon"><img class="sun" src="/imgs/icons8-sun.gif" alt="sun"></button>
+        <button onclick="theme()"><img src="/imgs/icons8-moon.gif" class="moon" id="moon" alt="moon"><img class="sun" id="sun" src="/imgs/icons8-sun.gif" alt="sun"></button>
     </nav>
+
     <div class="main">
-        <div class="content">
+        <div id="content" class="content">
             <h1>Filtereeeo</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore necessitatibus suscipit dolor similique eveniet eum temporibus deserunt, repellendus quae quis accusamus, quisquam vero, molestias culpa molestiae animi illo labore blanditiis ducimus cupiditate nihil autem aut. Repellat eaque nobis voluptas accusamus omnis at, optio eligendi iusto culpa quo unde consequatur! Laborum?</p>
         </div>
         
-        <img width="100%" src="/imgs/download-removebg-preview (2).png" alt="">
-    </div>
-
-    <!-- <div class="about">
-        <div class="cards">
-            <div class="card">
-                <img src="/imgs/4k-mountain-pictures-1kzx2ebh2et3ro4f.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="card">
-                <img src="/imgs/4k-mountain-pictures-1kzx2ebh2et3ro4f.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="card">
-                <img src="/imgs/4k-mountain-pictures-1kzx2ebh2et3ro4f.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+        <div class="half" id="half">
+            <div id="container3D"></div>
         </div>
-    </div> -->
+    </div>
 
     <!-- wrapper -->
     <div class="wrapper" id="about">
@@ -52,7 +36,7 @@
             <label for="c1" class="card">
                 <div class="row">
                     <div class="icon"><img src="" alt="">1</div>
-                    <div class="description">
+                    <div id="description class="description">
                         <h4>Everest1</h4>
                         <p>Winter has so much to offer -
                          creative activities</p>
@@ -93,6 +77,9 @@
             </label>
         </div>
     </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="main.js"></script>
 
     <!-- wrapper  end -->
 </body>
